@@ -161,7 +161,7 @@ footer {
 .content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     border-top: 1px solid black;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -248,14 +248,15 @@ footer {
         margin-top: 20px;
         display: flex;
         justify-content: space-around;
+        order: 99;
     }
     
     img.header-img {
         display: none;
     }
     
-    img.logo {
-        order: -99;
+    img.services-header-img {
+        width: 100%;
     }
     
     img.middle-img {
@@ -265,5 +266,18 @@ footer {
     #smallheader {
         flex-flow: column;
         align-items: center;
+    }
+    
+    img.services-info-img {
+        display: none;
+    }
+    
+    .end-block {
+        width: 100%;
+    }
+    
+    .subtitle-block {
+        width: 90%;
+        height: auto;
     }
 }
