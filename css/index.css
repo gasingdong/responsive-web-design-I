@@ -196,3 +196,39 @@ footer {
     flex-direction: column;
     align-content: center;
 }
+
+@media(max-width: 800px) {
+    
+    body {
+        width: 98%;
+        margin: auto;
+    }
+    
+    #features, #about, #services, #product, #vision {
+        padding-right: 20px;
+    }
+    
+    nav {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    img.header-img {
+        display: none;
+    }
+    
+    img.logo {
+        order: -99;
+    }
+    
+    img.middle-img {
+        width: 100%;
+    }
+    
+    #smallheader {
+        flex-flow: column;
+        align-items: center;
+    }
+}
