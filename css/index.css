@@ -198,39 +198,7 @@ footer {
     align-content: center;
 }
 
-@media(max-width: 500px) {
-    
-    #features, #about, #services, #product, #vision {
-        width: 100%;
-        margin-top: 20px;
-    }
-    
-    #bigheader {
-        margin: 0px;
-    }
-    
-    nav {
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    
-    #smallheader nav a {
-        display: flex;
-        flex-flow: column;
-        border-bottom: 1px solid gainsboro;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    nav a:first-child {
-        border-top: 1px solid gainsboro;
-    }
-    
-    img.middle-img {
-        margin-bottom: 0px;
-    }
-}
-
+/*Tablet View*/
 @media(max-width: 800px) {
     
     body {
@@ -279,5 +247,38 @@ footer {
     .subtitle-block {
         width: 90%;
         height: auto;
+    }
+}
+
+/*Mobile View*/
+@media(max-width: 500px) {
+    
+    #features, #about, #services, #product, #vision {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    #bigheader {
+        margin: 0px;
+    }
+    
+    nav {
+        flex-flow: column nowrap;
+    }
+    
+    #smallheader nav a {
+        display: flex;
+        flex-flow: column;
+        border-bottom: 1px solid gainsboro;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    nav a:first-child {
+        border-top: 1px solid gainsboro;
+    }
+    
+    img.middle-img {
+        margin-bottom: 0px;
     }
 }
