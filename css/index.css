@@ -1,3 +1,284 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body {
+    margin: 50px;
+    margin-top: 10px;
+    width: 876px;
+}
+
+#smallheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bigheader {
+    margin: 50px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    list-style: square;
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 20px;
+}
+
+h2.subtitle {
+    font-size: 24px;
+}
+
+#subtitle-header {
+    margin-bottom: 30px;
+}
+
+nav {
+    word-spacing: 55px;
+    margin-right: 75px;
+    padding-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+img {
+    margin: 0px;
+    vertical-align: middle;
+}
+
+img.services-header-img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+img.header-img {
+    margin: 50px;
+}
+
+img.middle-img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button {
+    font-family: 'Titillium Web', sans-serif;
+    background: none;
+    border: 1px solid black;
+    width: 200px;
+    font-size: 20px;
+}
+
+button.block {
+    margin-top: 15px;
+    font-size: 12px;
+    width: 125px;
+    height: 30px;
+    border-radius: 5px;
+    background: white;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+#features, #about {
+    width: 50%;
+}
+
+#services, #product, #vision {
+    width: 33%;
+}
+
+.end {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-block {
+    width: 400px;
+}
+
+.subtitle-block {
+    background: #f2f2f2;
+    width: 398px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*Tablet View*/
+@media(max-width: 800px) {
+    
+    body {
+        width: 95%;
+        margin: 3% auto;
+    }
+    
+    #features, #about, #services, #product, #vision {
+        padding-right: 20px;
+    }
+    
+    nav {
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        order: 99;
+    }
+    
+    img.header-img {
+        display: none;
+    }
+    
+    img.services-header-img {
+        width: 100%;
+    }
+    
+    img.middle-img {
+        width: 100%;
+    }
+    
+    #smallheader {
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    img.services-info-img {
+        display: none;
+    }
+    
+    .end-block {
+        width: 100%;
+    }
+    
+    .subtitle-block {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/*Mobile View*/
+@media(max-width: 500px) {
+    
+    #features, #about, #services, #product, #vision {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    #bigheader {
+        margin: 0px;
+    }
+    
+    nav {
+        flex-flow: column nowrap;
+    }
+    
+    #smallheader nav a {
+        display: flex;
+        flex-flow: column;
+        border-bottom: 1px solid gainsboro;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    nav a:first-child {
+        border-top: 1px solid gainsboro;
+    }
+    
+    img.middle-img {
+        margin-bottom: 0px;
+    }
+}
